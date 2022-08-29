@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/tailwind.css" rel="stylesheet">
+</head>
+
+<body>
+  <ul role="list" class="p-6 divide-y divide-slate-200 mt-5">
+
+    <!-- Remove top/bottom padding when first/last child -->
+    <li class="flex py-4 first:pt-0 last:pb-0">
+      <img class="h-10 w-10 rounded-full" src="asset/image/people.jpg" alt="" />
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-slate-900">Md.Hanif Rony</p>
+        <p class="text-sm text-slate-500 truncate">eng.hanif.roni63@gmail.com</p>
+      </div>
+    </li>
+    <li class="flex py-4">
+      <img class="h-10 w-10 rounded-full" src="asset/image/people1.jpg">
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-slate-900">Ifrat jahan Elma</p>
+        <p class="text-sm text-slate-500 truncate">ronyhassen96@gmail.com</p>
+      </div>
+    </li>
+    <li class="flex py-4">
+      <img src="asset/image/Pepole2.jpg" alt="Pepole2" class="h-10 w-10 rounded-full">
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm text-slate-900 truncate font-medium">Monoyar Hossen</p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Hover, focus, and active -->
+  <button
+    class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ml-4 p-2 border-r rounded-full">Save
+    changes</button>
+  <!-- From -->
+  <form action="" class="m-5">
+    <label for="" class="block">
+      <span class="block text-sm font-medium text-slate-700">Username</span>
+      <!-- Using form state modifers, the classes can be identical for every input -->
+      <input type="text" name="" id="" value="tbone"
+        class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500">
+    </label>
+    <label for="" class="block mt-4">
+      <span class="block text-sm font-medium text-slate-700">Email Address</span>
+      <!-- Using form state modifers, the classes can be identical for every input -->
+      <input type="email" name="" id="" value="eng.hanif.roni63@gmail.com" disabled
+        class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 disabled:bg-slate-50 disabled:text-slate-500
+     disabled:border-slate-200 disabled:shadow-noneinvalid:bg-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500">
+    </label>
+    <label for="" class="block mt-4">
+      <span class="block text-sm font-medium text-slate-700">Password</span>
+      <input type="password" name="" id="" value=""
+        class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-600">
+    </label>
+  </form>
+
+  <a href="#"
+    class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+    <div class="flex items-center space-x-3">
+      <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24">
+        <!-- ... -->
+      </svg>
+      <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
+    </div>
+    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting
+      templates.
+    </p>
+  </a>
+
+  <!-- Styling based on sibling state -->
+  <form action="" class="max-w-xs mx-auto mt-3">
+    <label for="" class="block">
+      <span class="block text-sm font-medium text-slate-700">Email Address</span>
+      <input type="email" name="email_address" id="email_address" class="peer ring-1 ring-slate-600 mt-2 rounded-md">
+      <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">Please Provide a Valid email Address.</p>
+    </label>
+  </form>
+
+  <!-- Before and after -->
+  <form action="" class="max-w-xs mx-auto">
+    <span class="after:content-['*'] after:ml-0.5 after:text-red-500 text-sm font-medium text-slate-700">Email
+      Address</span>
+    <input type="email" name="email_address" id="email_address"
+      class="mt-2 px-3 py-2 bg-white border border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 w-full block focus:ring-sky-500 focus:ring-1 rounded-md sm:text-sm peer"
+      placeholder="you@example.com">
+    <p class="mt-2 text-sm invisible peer-invalid:visible text-pink-600">Please Provide a Valid email Address.</p>
+  </form>
+
+  <blockquote class="mt-4 text-2xl font-semibold italic text-center">
+    when you look
+    <span
+      class="before:block before:absolute before:-inset-1 before:-skew-y-2 before:bg-pink-500 relative inline-block">
+      <span class="relative text-white">annoyed</span>
+    </span>
+    all the time, people think that you're busy.
+  </blockquote>
+
+  <!-- Placeholder text -->
+  <label for="" class="relative block max-w-xs mx-auto mt-4">
+    <span class="sr-only">Search</span>
+    <span class="absolute inset-y-0 left-0 flex items-center pl-2"></span>
+    <input type="text" name="" id=""
+      class="placeholder:italic placeholder:text-slate-400 py-2 pr-3 pl-9 w-full rounded-md bg-white border border-slate-300 block focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+      placeholder="Search for anything" name="search">
+  </label>
+
+  <!-- File input buttons -->
+  <form action="" class="flex items-center space-x-6 max-w-xs mx-auto mt-4">
+    <div class="shrink-0">
+      <img
+        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1361&q=80"
+        alt="Current profile photo" class="h-16 w-16 object-cover rounded-full">
+    </div>
+    <label for="" class="block">
+      <span class="sr-only">Choose profile photo</span>
+      <input type="file" name="" id=""
+        class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100">
+    </label>
+  </form>
+
+  <!-- List markers -->
+  <ul role="list" class="mt-4 max-w-xs mx-auto marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500">
+    <li>5 cups chopped Porcini mushrooms</li>
+    <li>1/2 cup of olive oil</li>
+    <li>3lb of celery</li>
+  </ul>
+
+  <!-- Highlighted text -->
+  <div class="selection:bg-fuchsia-300 selection:text-fuchsia-900 mt-3 max-w-xs mx-auto">
+    <p>So I started to walk into the water. I won't lie to you boys, I was
+      terrified. But I pressed on, and as I made my way past the breakers
+      a strange calm came over me. I don't know if it was divine intervention
+      or the kinship of all living things but I tell you Jerry at that moment,
+      I <em>was</em>a marine biologist.</p>
+  </div>
+
+  <!-- First-line and first-letter -->
+  <div class="mt-3 max-w-xs mx-auto selection:bg-fuchsia-200 selection:text-slate-900">
+    <p
+      class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">
+      Well, let me
+      tell you something,
+      funny boy.
+      Y'know that
+      little stamp, the one
+      that says "New York Public Library"? Well that may not mean anything to you,
+      but that means a lot to me. One whole hell of a lot.</p>
+  </div>
+
+  <!-- Prefers color scheme -->
+  <div class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1
+ ring-slate-900/5 shadow-xl mt-3 max-w-xl mx-auto">
+    <div>
+      <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+          <path
+            d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z" />
+        </svg>
+      </span>
+    </div>
+    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
+    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">The Zero Gravity Pen can be used to write in any
+      orientation, including upside-down. It even works in outer space.
+    </p>
+  </div>
+
+  <!-- RTL support -->
+  <div class="group flex items-center max-w-xs mx-auto mt-6">
+    <img class="shrink-0 h-12 w-12 rounded-full" src="asset/image/people2.jpg" alt="" />
+    <div class="ltr:ml-3 rtl:mr-3 ml-3">
+      <p class="text-sm font-medium text-slate-700 group-hover:text-slate-900">Tom Cook</p>
+      <p class="text-sm font-medium text-slate-500 group-hover:text-slate-700">Director of Operations</p>
+    </div>
+  </div>
+
+  <!-- Open/closed state -->
+  <div class="max-w-lg mx-auto p-8">
+    <details
+      class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg"
+      open>
+      <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">Why do they call it
+        Ovaltine?</summary>
+      <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+        <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+      </div>
+    </details>
+  </div>
+
+</body>
+
+</html>
