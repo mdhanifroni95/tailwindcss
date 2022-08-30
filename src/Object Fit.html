@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/dist/tailwind.css">
+ <title>Object Fit</title>
+</head>
+
+<body>
+ <div class="max-w-xl mx-auto">
+  <div class="bg-indigo-300">
+   <img src="asset/image/people1.jpg" alt="" class="object-cover h-48 w-96">
+  </div>
+
+  <!-- Containing an element -->
+  <div class="bg-purple-300 mt-3">
+   <img src="asset/image/people3.jpg" alt="" class="object-contain h-48 w-96">
+  </div>
+
+  <!-- Stretching to fit a container -->
+  <div class="bg-sky-300 mt-3">
+   <img src="asset/image/people.jpg" alt="" class="object-fill h-48 w-96">
+  </div>
+  <!-- Scaling down if too large -->
+  <div class="bg-cyan-300 mt-3">
+   <img src="asset/image/people1.jpg" alt="" class="object-scale-down h-48 w-96">
+  </div>
+  <!-- Using an element's original size -->
+  <div class="bg-yellow-300">
+   <img class="object-none h-48 w-96" src="asset/image/people2.jpg">
+  </div>
+ </div>
+
+</body>
+
+</html>
