@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/tailwind.css" />
+    <title>Position</title>
+  </head>
 
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/dist/tailwind.css">
- <title>Position</title>
-</head>
+  <body>
+    <div class="max-w-6xl mx-auto">
+      <!-- Statically positioning elements -->
+      <div class="static">
+        <p>Static parent</p>
+        <div class="absolute left-0 bottom-0">
+          <p>Absolute child</p>
+        </div>
+      </div>
 
-<body>
- <!-- Statically positioning elements -->
+      <!-- Relatively positioning elements -->
+      <div class="relative">
+        <p>Relative Parent</p>
+        <div class="absolute left-0 bottom-0 top-6">
+          <p>Absolute Child</p>
+        </div>
+      </div>
 
-</body>
+      <!-- Absolutely positioning elements -->
+      <div class="static mt-5">
+        <!-- Static parent -->
+        <div class="static ..."><p>Static child</p></div>
+        <div class="inline-block ..."><p>Static sibling</p></div>
+        <!-- Static parent -->
+        <div class="absolute ..."><p>Absolute child</p></div>
+        <div class="inline-block ..."><p>Static sibling</p></div>
+      </div>
 
+      <!-- Fixed positioning elements -->
+      <div class="relative top-9">
+        <div class="fixed top-0 left-0 right-0">Contacts</div>
+        <div>
+          <div>
+            <img
+              src="asset/image/people.jpg"
+              class="w-16 h-16 rounded-full float-left"
+            />
+            <strong class="float-left">Andrew Alfred</strong>
+          </div>
+          <div>
+            <img
+              src="asset/image/people2.jpg"
+              class="w-16 h-16 rounded-full float-left"
+            />
+            <strong class="float-left">Debra Houston</strong>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
