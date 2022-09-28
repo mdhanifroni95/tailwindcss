@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility</title>
+    <link rel="stylesheet" href="/dist/tailwind.css" />
+  </head>
+  <body>
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-3 gap-3 mt-3">
+        <div
+          class="bg-purple-500 text-center h-16 w-32 rounded-md visible xl:invisible"
+        >
+          1
+        </div>
+        <div class="invisible">2</div>
+        <div class="bg-rose-600 text-center h-16 w-32 rounded-md">3</div>
+      </div>
+    </div>
+  </body>
+</html>
