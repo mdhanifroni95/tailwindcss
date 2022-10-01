@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex Basis</title>
-    <link rel="stylesheet" href="/dist/tailwind.css" />
-  </head>
-  <body>
-    <div class="max-w-6xl mx-auto">
-      <!-- Setting the flex basis -->
-      <div class="flex flex-row">
-        <div class="basis-1/4 bg-rose-400 p-4 m-2 rounded-md text-center">
-          01
-        </div>
-        <div class="basis-1/4 bg-amber-500 p-4 m-2 rounded-md text-center">
-          02
-        </div>
-        <div class="basis-1/2 bg-indigo-500 p-4 m-2 rounded-md text-center">
-          03
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex Basis</title>
+  <link rel="stylesheet" href="/dist/tailwind.css" />
+</head>
+<body>
+  <div class="max-w-6xl mx-auto">
+    <!-- Setting the flex basis -->
+    <div class="flex flex-row">
+      <div class="basis-1/4 bg-rose-400 p-4 m-2 rounded-md text-center">
+        01
       </div>
-      <!-- Hover, focus, and other states -->
-      <div class="flex flex-row">
-        <div
-          class="basis-1/4 hover:basis-1/3 p-4 bg-pink-500 text-center rounded-md"
-        >
-          01
-        </div>
+      <div class="basis-1/4 bg-amber-500 p-4 m-2 rounded-md text-center">
+        02
       </div>
-      <!-- Breakpoints and media queries -->
-      <div class="flex flex-row">
-        <div
-          class="basis-1/4 md:basis-1/3 bg-amber-500 text-center rounded-md p-4 mt-4"
-        >
-          01
-        </div>
+      <div class="basis-1/2 bg-indigo-500 p-4 m-2 rounded-md text-center">
+        03
       </div>
     </div>
-  </body>
+    <!-- Hover, focus, and other states -->
+    <div class="flex flex-row">
+      <div class="basis-1/4 hover:basis-1/3 p-4 bg-pink-500 text-center rounded-md">
+        01
+      </div>
+    </div>
+    <!-- Breakpoints and media queries -->
+    <div class="flex flex-row">
+      <div class="basis-1/4 md:basis-1/3 bg-amber-500 text-center rounded-md p-4 mt-4">
+        01
+      </div>
+    </div>
+  </div>
+</body>
 </html>

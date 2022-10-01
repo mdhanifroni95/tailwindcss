@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flex Wrap</title>
+ <link rel="stylesheet" href="/dist/tailwind.css">
+</head>
+<body>
+ <div class="max-w-6xl mx-auto">
+  <!-- Don't wrap -->
+  <div class="flex flex-nowrap mt-2">
+   <div class="bg-purple-500 w-96 h-16 p-4 text-center rounded-md">01</div>
+   <div class="bg-fuchsia-500 w-96 h-16 p-4 text-center rounded-md ml-2">02</div>
+   <div class="bg-lime-400 w-96 h-16 p-4 text-center rounded-md ml-2 mt-1">03</div>
+  </div>
+
+  <!-- Wrap normally -->
+  <div class="flex flex-wrap mt-2">
+   <div class="bg-purple-500 w-96 h-16 p-4 text-center rounded-md">01</div>
+   <div class="bg-fuchsia-500 w-96 h-16 p-4 text-center rounded-md ml-2">02</div>
+   <div class="bg-lime-400 w-96 h-16 p-4 text-center rounded-md ml-2 mt-1">03</div>
+  </div>
+
+  <!-- Wrap reversed -->
+  <div class="flex flex-wrap-reverse mt-2">
+   <div class="bg-purple-500 w-96 h-16 p-4 text-center rounded-md my-1">01</div>
+   <div class="bg-fuchsia-500 w-96 h-16 p-4 text-center rounded-md ml-2">02</div>
+   <div class="bg-lime-400 w-96 h-16 p-4 text-center rounded-md ml-2 my-1">03</div>
+   <div class="bg-emerald-500 w-96 h-16 p-4 text-center rounded-md ml-2 mt-1">04</div>
+  </div>
+ </div>
+</body>
+</html>
