@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Flex Shrink</title>
+ <link rel="stylesheet" href="/dist/tailwind.css">
+</head>
+<body>
+ <div class="max-w-7xl mx-auto shadow-sm rounded-md border mt-1 focus:border-purple-400 focus:border">
+  <div class="flex">
+   <div class="flex-none w-14 h-14 bg-indigo-300 p-4">01</div>
+   <div class="shrink w-64 h-14 bg-amber-400 p-4">02</div>
+   <div class="flex-none w-14 h-14 bg-indigo-300 p-4">03</div>
+  </div>
+  <!-- Don't shrink -->
+  <div class="flex">
+   <div class="flex-1 w-14 h-14 bg-blue-500 p-4">01</div>
+   <div class="shrink-0 w-64 h-14 bg-amber-400 p-4">02</div>
+   <div class="flex-1 w-14 h-14 bg-purple-500 p-4">03</div>
+  </div>
+ </div>
+</body>
+</html>
